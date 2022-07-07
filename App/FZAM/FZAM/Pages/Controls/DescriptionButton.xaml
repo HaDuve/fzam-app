@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FZAM.Pages.Controls.DescriptionButton">
+    <Grid HorizontalOptions="FillAndExpand" Padding="0,0,0,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="80" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" VerticalOptions="Start" x:Name="LabelTitle" FontAttributes="Bold">TITLE</Label>
+        <Label Grid.Column="1"  VerticalOptions="Start" x:Name="LabelText" LineBreakMode="NoWrap" FontAttributes="Bold">TEXT</Label>
+        <Label Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="Start" x:Name="LabelKeywords">KEYWORDS</Label>
+        <Button Grid.Column="2" Grid.RowSpan="2"  VerticalOptions="FillAndExpand" x:Name="OkButton" Text="Details" 
+                TextColor="#764a6b" BackgroundColor="#ebe0e6"/>
+    </Grid>
+</ContentView>

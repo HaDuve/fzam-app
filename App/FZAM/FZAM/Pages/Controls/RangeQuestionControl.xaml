@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FZAM.Pages.Controls.RangeQuestionControl">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <StackLayout Grid.Row="0" Spacing="0">
+            <Button Text="6" HorizontalOptions="FillAndExpand"  x:Name="Button6"
+                TextColor="#764a6b" BackgroundColor="#967584" HeightRequest="50" Clicked="ChoiceButtonAccepted"/>
+            <Button Text="5" HorizontalOptions="FillAndExpand"  x:Name="Button5" 
+                TextColor="#764a6b" BackgroundColor="#ac8596" HeightRequest="50" Clicked="ChoiceButtonAccepted"/>
+            <Button Text="4" HorizontalOptions="FillAndExpand"  x:Name="Button4"
+                TextColor="#764a6b" BackgroundColor="#bf97a9" HeightRequest="50" Clicked="ChoiceButtonAccepted"/>
+            <Button Text="3" HorizontalOptions="FillAndExpand"  x:Name="Button3"
+                TextColor="#764a6b" BackgroundColor="#cfa9ba" HeightRequest="50" Clicked="ChoiceButtonAccepted"/>
+            <Button Text="2" HorizontalOptions="FillAndExpand"  x:Name="Button2" 
+                TextColor="#764a6b" BackgroundColor="#e0bccd" HeightRequest="50" Clicked="ChoiceButtonAccepted"/>
+            <Button Text="1" HorizontalOptions="FillAndExpand"  x:Name="Button1"
+                TextColor="#764a6b" BackgroundColor="#f0c9db" HeightRequest="50" Clicked="ChoiceButtonAccepted"/>
+            <Button Text="0" HorizontalOptions="FillAndExpand"  x:Name="Button0" 
+                TextColor="#764a6b" BackgroundColor="#f7dce8" HeightRequest="50" Clicked="ChoiceButtonAccepted"/>
+        </StackLayout>
+
+        <Button Grid.Row="1" Text="Nicht Anwendbar" HorizontalOptions="FillAndExpand" VerticalOptions="End"  x:Name="NotApplicableButton"
+                TextColor="#764a6b" BackgroundColor="#ebe0e6" HeightRequest="40" Clicked="NotApplicableButton_OnClicked"/>
+
+
+    </Grid>
+</ContentView>

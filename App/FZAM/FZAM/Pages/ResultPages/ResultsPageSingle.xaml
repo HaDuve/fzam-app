@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FZAM.Pages.ResultPages.ResultsPageSingle"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:controls="clr-namespace:FZAM.Pages.Controls;assembly=FZAM"
+             iOsSpecific:Page.UseSafeArea="true"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <ScrollView Margin="5">
+            <Grid x:Name="LayoutWrapper">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" Grid.ColumnSpan="2" />
+                    <RowDefinition Height="*" Grid.ColumnSpan="2" />
+                    <RowDefinition Height="Auto" Grid.ColumnSpan="2" />
+                    <RowDefinition Height="5" Grid.ColumnSpan="2" />
+                    <RowDefinition Height="40" Grid.ColumnSpan="2" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="20" Grid.ColumnSpan="2" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Header -->
+                <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="0" RowSpacing ="0" HeightRequest="45">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Grid.Row="0" Grid.Column="0" Source="arrow_left.png" VerticalOptions="Start" Clicked="BackButton_OnClicked"
+                                 HorizontalOptions="Center" HeightRequest="40" BackgroundColor="Transparent"
+                                 IsVisible="{OnPlatform iOS=true, Android=false, UWP=true}" />
+
+                    <StackLayout Grid.Row="0" Grid.Column="1" Spacing="1">
+                        <Label VerticalOptions="Start" x:Name="PageTitel" FontAttributes="Bold" TextColor="#764a6b" FontSize="Subtitle" MaxLines="1">TITELE</Label>
+                        <Label VerticalOptions="Start" x:Name="PageDate">DATE</Label>
+                    </StackLayout>
+
+
+                    <ImageButton Grid.Row=" 0" Grid.Column="2" Clicked="OnShowInfoPopupButton" HeightRequest="30" 
+                                 Margin="0,0,10,0"
+                                 HorizontalOptions="End" VerticalOptions="Center" Source="button_info.png" 
+                                 BackgroundColor="Transparent"/>
+                </Grid>
+                <!-- Body -->
+
+                <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="3" Color="#764a6b"
+                         HorizontalOptions="Fill" />
+
+                <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="DataPanel">
+                    <controls:ThreeValueChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="2" Margin="20,0,0,0" VerticalOptions="Start">
+                    <Label  VerticalOptions="Start" Text="▪ Positives Coping" TextColor="#207de5" TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnShowFunctionalesCopingLabel"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label  VerticalOptions="Start" Text="▪ Dysfunktionales Lampenfieber" TextColor="#e11d21" TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnShowDysfunktionalesLampenfieber"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label  VerticalOptions="Start" Text="▪ Selbstwirksamkeit" TextColor="#692858" TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnShowSelbstwirksamkeit"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+                <BoxView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="3" Color="#764a6b"
+                         HorizontalOptions="Fill"/>
+
+                <ImageButton Grid.Row="5" Grid.Column="1" HeightRequest="40" Clicked="saveReturnButton_Clicked"
+                             BackgroundColor="#ebe0e6" HorizontalOptions="Fill"
+                            Source="save_back.png" IsVisible="False" x:Name="SaveButton" />
+                <ImageButton Grid.Row="5" Grid.Column="0" HeightRequest="40" Clicked="DeleteButton_Clicked"
+                        Source="trashcan.png" BackgroundColor="#ebe0e6" HorizontalOptions="Fill" />
+                <Button Grid.Row="6" Grid.Column="0" HeightRequest="40" Clicked="MoreInfoButtonClicked"
+                        TextColor="#764a6b" BackgroundColor="#ebe0e6" HorizontalOptions="Fill" Grid.ColumnSpan="2"
+                        Text="Informationen zum Auftritt" />
+                <Label Grid.Row="7" Grid.Column="0" VerticalOptions="Start" x:Name="EntryLabel" Grid.ColumnSpan="2">ENTRY</Label>
+                <Button Grid.Row="8" Grid.Column="0" HeightRequest="40" Clicked="ShowPrevResult"
+                        x:Name="PreviousButton"
+                        TextColor="#764a6b" BackgroundColor="#ebe0e6" HorizontalOptions="Fill" Text="Zurück" />
+                <Button Grid.Row="8" Grid.Column="1" HeightRequest="40" Clicked="ShowNextResult" x:Name="NextButton" 
+                        TextColor="#764a6b" BackgroundColor="#ebe0e6" HorizontalOptions="Fill" Text="Weiter" />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

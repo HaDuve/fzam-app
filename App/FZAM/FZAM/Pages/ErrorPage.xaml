@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOsSpecific:Page.UseSafeArea="true"
+             x:Class="FZAM.Pages.ErrorPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="message"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   XAlign="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

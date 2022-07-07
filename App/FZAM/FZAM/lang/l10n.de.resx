@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllAnswersWillBeLost" xml:space="preserve">
+    <value>Alle Antworten in Ihrem aktuellen Fragebogen gehen verloren</value>
+  </data>
+  <data name="AnswerPlaceholder" xml:space="preserve">
+    <value>Antwort</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>Frage zurück</value>
+  </data>
+  <data name="ChangeDate" xml:space="preserve">
+    <value>Datum ändern</value>
+  </data>
+  <data name="ConfigLoadError" xml:space="preserve">
+    <value>Die Konfiguration konnte nicht geladen werden. Bitte wähle eine Sprache aus der unten stehenden Liste, um es erneut zu versuchen</value>
+  </data>
+  <data name="ErrorPageTitle" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="FilleOnDate" xml:space="preserve">
+    <value>Ausgefüllt am {0}</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Von</value>
+  </data>
+  <data name="GenearlError" xml:space="preserve">
+    <value>Es ist ein Fehler aufgetreten. Versuchen Sie die App neu zu starten oder kontaktieren Sie den Entwickler, wenn das Problem bestehen bleibt.</value>
+  </data>
+  <data name="InfoPageTitle" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="MainPageTitle" xml:space="preserve">
+    <value>FZAM</value>
+  </data>
+  <data name="NextButton" xml:space="preserve">
+    <value>Weiter</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+  <data name="PrevButton" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="QuestionnaireDateRange" xml:space="preserve">
+    <value>Auswahl der Auftritte vom {0} bis {1}</value>
+  </data>
+  <data name="QuestionnaireNumbering" xml:space="preserve">
+    <value>Dies ist der Auftritt Nr. {0} von {1} </value>
+  </data>
+  <data name="QuestionnaireNumRangeNumbering" xml:space="preserve">
+    <value>Fragebogen Abfolge Nr. {0} von {1}</value>
+  </data>
+  <data name="QuestionnairePageTitle" xml:space="preserve">
+    <value>Fragebogen</value>
+  </data>
+  <data name="QuestionnairePageTitleCount" xml:space="preserve">
+    <value>Frage {0} von {1}</value>
+  </data>
+  <data name="QuestionnaireResultLoadError" xml:space="preserve">
+    <value>Das Laden der Ergebnise ist fehlgeschlagen</value>
+  </data>
+  <data name="QuestionnaireResultSaveError" xml:space="preserve">
+    <value>Das Speichern der Ergebnise ist fehlgeschlagen</value>
+  </data>
+  <data name="ReallyResetQuestionnaire" xml:space="preserve">
+    <value>Den Fragebogen wirklich zurücksetzen?</value>
+  </data>
+  <data name="ResultCalculationError" xml:space="preserve">
+    <value>Beim Berechnen der Ergebnisse ist ein Fehler aufgetreten</value>
+  </data>
+  <data name="ResultSelection" xml:space="preserve">
+    <value>Ergebnis auswählen</value>
+  </data>
+  <data name="ResultSelectionByNum" xml:space="preserve">
+    <value>Anzahl an Ergebnissen anzeigen</value>
+  </data>
+  <data name="ResultSelectionEndDate" xml:space="preserve">
+    <value>bis</value>
+  </data>
+  <data name="ResultSelectionPageTitle" xml:space="preserve">
+    <value>Ergebnisse auswählen</value>
+  </data>
+  <data name="ResultSelectionStartDate" xml:space="preserve">
+    <value>von</value>
+  </data>
+  <data name="ResultsPageTitle" xml:space="preserve">
+    <value>Ergebnisse</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Auswählen</value>
+  </data>
+  <data name="Till" xml:space="preserve">
+    <value>Bis</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="ResultSelectionDateRange" xml:space="preserve">
+    <value>Ergebnisse nach Datum auswählen</value>
+  </data>
+  <data name="ResetQuestionnaireButton" xml:space="preserve">
+    <value>Fragebogen zurücksetzen</value>
+  </data>
+  <data name="SelectedPerformances" xml:space="preserve">
+    <value>Mittelwerte über {0} ausgewählten Auftritte.</value>
+  </data>
+  <data name="ShowInfoPageButton" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="ShowResultsButton" xml:space="preserve">
+    <value>Ergebnisse anzeigen</value>
+  </data>
+  <data name="StartQuestionnaireButton" xml:space="preserve">
+    <value>Fragebogen</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Teilen</value>
+  </data>
+  <data name="SubtitleResultSelectionPage" xml:space="preserve">
+    <value>Verzeichnis der Auftritte</value>
+  </data>
+  <data name="TitleDescriptionSearch" xml:space="preserve">
+    <value>Titel/Stichwortsuche</value>
+  </data>
+  <data name="InfoResult" xml:space="preserve">
+    <value>Weitere Informationen zum Auftritt</value>
+  </data>
+  <data name="BackToChart" xml:space="preserve">
+    <value>Zurück zur Grafik</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="DeleteInfoText" xml:space="preserve">
+    <value>Der komplette Eintrag wird unwiderruflich gelöscht: </value>
+  </data>
+  <data name="ListOfResults" xml:space="preserve">
+    <value>Titel/Stichwortsuche</value>
+  </data>
+  <data name="ReallyDelete" xml:space="preserve">
+    <value>Wirklich Löschen?</value>
+  </data>
+  <data name="Absolutely" xml:space="preserve">
+    <value>trifft voll und ganz zu</value>
+  </data>
+  <data name="Allright" xml:space="preserve">
+    <value>trifft teilweise zu</value>
+  </data>
+  <data name="Bad" xml:space="preserve">
+    <value>eher schlecht</value>
+  </data>
+  <data name="Desasterous" xml:space="preserve">
+    <value>disaströs</value>
+    <comment>sollte nicht vorkommen in der skala</comment>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>ausgezeichnet</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>gut</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>sehr wichtig</value>
+  </data>
+  <data name="JustRight" xml:space="preserve">
+    <value>gerade richtig</value>
+  </data>
+  <data name="LessGood" xml:space="preserve">
+    <value>ausreichend</value>
+  </data>
+  <data name="Little" xml:space="preserve">
+    <value>trifft eher nicht zu</value>
+  </data>
+  <data name="LittleImportant" xml:space="preserve">
+    <value>sehr wichtig</value>
+  </data>
+  <data name="LittleTooEasy" xml:space="preserve">
+    <value>nicht so leicht</value>
+  </data>
+  <data name="LittleTooHard" xml:space="preserve">
+    <value>schwer</value>
+  </data>
+  <data name="LittleTooHigh" xml:space="preserve">
+    <value>hoch</value>
+  </data>
+  <data name="LittleTooLow" xml:space="preserve">
+    <value>niedrig</value>
+  </data>
+  <data name="Much" xml:space="preserve">
+    <value>trifft eher zu</value>
+  </data>
+  <data name="NotAtAll" xml:space="preserve">
+    <value>trifft überhaupt nicht zu</value>
+    <comment>sollte nicht vorkommen in der skala</comment>
+  </data>
+  <data name="NotAtAllImportant" xml:space="preserve">
+    <value>überhaupt nicht wichtig</value>
+  </data>
+  <data name="NotThatImportant" xml:space="preserve">
+    <value>nicht so wichtig</value>
+  </data>
+  <data name="TooEasy" xml:space="preserve">
+    <value>leicht</value>
+  </data>
+  <data name="TooHard" xml:space="preserve">
+    <value>zu hart</value>
+  </data>
+  <data name="TooHigh" xml:space="preserve">
+    <value>sehr hoch</value>
+  </data>
+  <data name="TooLow" xml:space="preserve">
+    <value>sehr niedrig</value>
+  </data>
+  <data name="Unimportant" xml:space="preserve">
+    <value>unwichtig</value>
+  </data>
+  <data name="VeryBad" xml:space="preserve">
+    <value>schlecht</value>
+  </data>
+  <data name="VeryGood" xml:space="preserve">
+    <value>sehr gut</value>
+  </data>
+  <data name="VeryImportant" xml:space="preserve">
+    <value>sehr wichtig</value>
+  </data>
+  <data name="VeryLittle" xml:space="preserve">
+    <value>trifft nicht zu</value>
+  </data>
+  <data name="VeryMuch" xml:space="preserve">
+    <value>trifft sehr zu</value>
+  </data>
+  <data name="WayTooEasy" xml:space="preserve">
+    <value>viel zu einfach</value>
+  </data>
+  <data name="WayTooHard" xml:space="preserve">
+    <value>viel zu hart</value>
+  </data>
+  <data name="WayTooHigh" xml:space="preserve">
+    <value>viel zu hoch</value>
+  </data>
+  <data name="WayTooLow" xml:space="preserve">
+    <value>viel zu gering</value>
+  </data>
+  <data name="AssessmentScale" xml:space="preserve">
+    <value>Beurteilung der musikalischen Qualität (Mittelwert aller Einzelkriterien) </value>
+  </data>
+  <data name="JustRightEasy" xml:space="preserve">
+    <value>eher schwer</value>
+  </data>
+  <data name="JustRightImportant" xml:space="preserve">
+    <value>wichtig</value>
+  </data>
+  <data name="SubSubTitleResultSelectionPage" xml:space="preserve">
+    <value>Auf dieser Seite können Sie mehrere Auftritte in einem Zeitraum, den Sie angeben, auswählen. 
+Auf der folgenden Ergebnisseite wird die Grafik mit den  Durchschnittswerten über diese Auftritte angezeigt. 
+Darüber hinaus können Sie auch eine Auflistung der Einzelwerte in einer Grafik erhalten.</value>
+  </data>
+  <data name="TitleResultSelectionPage" xml:space="preserve">
+    <value>Verzeichnis der Auftritte</value>
+  </data>
+  <data name="NotApplicable" xml:space="preserve">
+    <value>nicht zutreffend</value>
+  </data>
+  <data name="LiftTheCurtain" xml:space="preserve">
+    <value>Vorhang auf!</value>
+  </data>
+  <data name="WelcomeMessageDialoge" xml:space="preserve">
+    <value>Herzlich Willkommen bei Stage:Cool - der Auftritts-App für MusikerInnen!
+
+Diese App unterstützt Sie dabei, Rückmeldungen zu Ihren wertvollen Erfahrungen bei musikalischen Auftritten zu sammeln. Mehr Infos finden Sie auf der nächsten Seite über den Info-Icon.
+
+Wir wünschen viel Spaß!</value>
+  </data>
+  <data name="WelcomeMessageDialogeTitle" xml:space="preserve">
+    <value>Herzlich Willkommen bei Stage:Cool</value>
+  </data>
+  <data name="DialogJudgmentalScale" xml:space="preserve">
+    <value>Dieser Wert bildet den Mittelwert über die 7 Beurteilungen des eigenen Spiels. Er liegt zwischen 1 (schlecht) und 6 (ausgezeichnet).</value>
+  </data>
+  <data name="DialogJudgmentalScaleTitle" xml:space="preserve">
+    <value>Beurteilung der musikalischen Qualität</value>
+  </data>
+  <data name="DialogResultListPage" xml:space="preserve">
+    <value>Auf dieser Seite können Sie mehrere Auftritte in einem Zeitraum den Sie angeben, auswählen. Auf der folgenden Ergebnisseite wird die Grafik mit den  Durchschnittswerten über diese Auftritte angezeigt. Darüber hinaus können Sie auch eine Auflistung der Einzelwerte in einer Grafik erhalten. Unter Titel / Stichwort können Sie auch direkt nach einem oder mehreren Auftritten suchen.Ohne Stichwortsuche finden Sie darunter alle eingegebenen Auftritte chronologisch aufgelistet. Mit dem Pfeil gelangen Sie jeweils zur Ergebnisseite des ausgewählten Auftritts.</value>
+  </data>
+  <data name="DialogResultListPageTitle" xml:space="preserve">
+    <value>Verzeichnis bisheriger Auftritte</value>
+  </data>
+  <data name="DialogResultPageInfo" xml:space="preserve">
+    <value>Wie werden die Ergebnisse des Fragebogens dargestellt?
+
+Sie finden eine Grafik mit Punkten die jeweils den Zeitpunkten vor, während und nach dem Auftritt zugeordnet sind. Die drei unterschiedlichen Farben dieser Punkte bedeuten die Bereiche Positives Coping, Dysfunktionales Lampenfieber und Selbstwirksamkeit. Was diese Begriffe genau bedeuten, können Sie beim Anklicken des jeweiligen Info - Buttons nachlesen. Anhand der Grafik können Sie nachvollziehen, wie sich die einzelnen Bereiche über die Zeitpunkte des Auftritts hinweg entwickelt haben. Wenn Sie sich für die Zahlenwerte der Punkte interessieren, können Sie auf die Begriffe klicken.
+
+Die Darstellung weiterer Angaben zum Auftritt finden Sie unter "Weitere Informationen zum Auftritt"</value>
+  </data>
+  <data name="DialogResultPageInfoTitel" xml:space="preserve">
+    <value>Ergebnisansicht</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="FirstQuestionnaireDialog" xml:space="preserve">
+    <value>Alle Fragen beziehen sich auf den gerade zurückliegenden Auftritt. Bitte klicken Sie für Ihre Antwort auf das am ehesten zutreffende Feld. Sie werden automatisch zur nächsten Frage geführt.
+ 
+Mit dem unteren Pfeil können Sie zur vorherigen Frage zurückgehen und Ihre Antwort korrigieren. Unter der Rubrik „Fragen zum Auftritt“ können Sie Informationen zu Ihrem Auftritt eintragen. Ihre Antworten und Eintragungen werden für die Auswertung automatisch gespeichert.
+ 
+Wenn Sie alles ausgefüllt haben, erscheint eine Ergebnisseite. Hier finden Sie die Auswertung Ihrer Angaben in grafischer Darstellung. Zur Interpretation erhalten Sie dort Informationen. Genauere Hintergründe finden Sie auch auf unserer Website.
+
+Viel Spaß beim Ausfüllen!</value>
+  </data>
+  <data name="FirstQuestionnaireDialogeTitle" xml:space="preserve">
+    <value>Was machen die folgenden Seiten?</value>
+  </data>
+  <data name="ResultSinglePageDialogeTitle" xml:space="preserve">
+    <value>Werte eines Auftritts</value>
+  </data>
+  <data name="DysfunctionalStageFrightText" xml:space="preserve">
+    <value>Wie stark sind die Erscheinungen meines Lampenfiebers und wie sehr lasse ich mich davon beeinträchtigen? Lampenfieber wirkt sich dann negativ auf den Auftritt aus, wenn wir uns davon bestimmen und verunsichern lassen. Je höher der Wert auf dieser Skala ist, desto ungünstiger ist die Bewältigungsstrategie. Dieser Wert sollte vor dem Auftritt während des Auftritts und nach dem Auftritt möglichst niedrig ausfallen.</value>
+  </data>
+  <data name="DysfunctionalStageFrightTitle" xml:space="preserve">
+    <value>Dysfunktionales Lampenfieber</value>
+  </data>
+  <data name="PositiveCopingText" xml:space="preserve">
+    <value>Wie gut kann ich mit den Erscheinungen meines Lampenfiebers umgehen? 
+Lampenfieber gehört zum Auftritt dazu und je gelassener und positiver wir damit umgehen, um so besser gelingt der Auftritt. Je höher der Wert auf dieser Skala ist, desto positiver ist das Coping, also der Umgang mit Lampenfieber.
+ 
+Dieser Wert sollte vor dem Auftritt, während des Auftritts und nach dem Auftritt möglichst hoch ausfallen.</value>
+  </data>
+  <data name="PositiveCopingTitle" xml:space="preserve">
+    <value>Positives Coping</value>
+  </data>
+  <data name="SelfAssesmentText" xml:space="preserve">
+    <value>Wie sehr bin ich davon überzeugt, die Herausforderungen des Auftritts zu meistern? Eine starke Überzeugung, dass ich meine Ziele beim Auftritt erreichen kann, erhöht auch die Wahrscheinlichkeit, dass der Auftritt gelingt. Je höher der Wert, desto größer ist die Selbstwirksamkeit. Dieser Wert sollte vor dem Auftritt, während des Auftritts und nach dem Auftritt möglichst hoch ausfallen.</value>
+  </data>
+  <data name="SelfAssesmentTitle" xml:space="preserve">
+    <value>Selbstwirksamkeit</value>
+  </data>
+</root>

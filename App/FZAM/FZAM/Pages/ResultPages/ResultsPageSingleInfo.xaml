@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:menu="clr-namespace:FZAM.Pages.Controls;assembly=FZAM"
+             x:Class="FZAM.Pages.ResultPages.ResultsPageSingleInfo"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOsSpecific:Page.UseSafeArea="true"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <ScrollView Margin="5">
+            <Grid x:Name="LayoutWrapper">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions> 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Header -->
+                <Grid Grid.Column="0" Grid.Row="0" Margin="0" RowSpacing ="0" HeightRequest="45">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Grid.Row="0" Grid.Column="0" Source="arrow_left.png" VerticalOptions="Start" Clicked="BackButton_OnClicked"
+                                 HorizontalOptions="Center" HeightRequest="40" BackgroundColor="Transparent"
+                                 IsVisible="{OnPlatform iOS=true, Android=false, UWP=true}" />
+
+                    <StackLayout Grid.Row="0" Grid.Column="1" Spacing="1">
+                        <Label VerticalOptions="Start" x:Name="PageTitel" FontAttributes="Bold" 
+                               TextColor="#764a6b" FontSize="Subtitle" MaxLines="1">TITELE</Label>
+                        <Label VerticalOptions="Start" x:Name="PageDate">DATE</Label>
+                    </StackLayout>
+                </Grid>
+                <!-- Body -->
+
+                <BoxView Grid.Row="1" HeightRequest="3" Color="#764a6b" HorizontalOptions="Fill"></BoxView>
+
+                <!-- Pos. Coping-->
+                <StackLayout Grid.Row="2">
+                    <Label VerticalOptions="Start" FontAttributes="Bold">Positives Coping</Label>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Vor" x:Name="copingBefore"/>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Während" x:Name="copingWhile"/>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Nach" x:Name="copingAfter"/>
+                </StackLayout>
+
+                <!-- Dysf. Coping-->
+                <StackLayout Grid.Row="3">
+                    <Label VerticalOptions="Start" FontAttributes="Bold">Dysfunktionales Lampenfieber</Label>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Vor" x:Name="shakesBefore"/>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Während" x:Name="shakesWhile"/>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Nach" x:Name="shakesAfter"/>
+                </StackLayout>
+
+                <!-- Efficacy-->
+                <StackLayout Grid.Row="4">
+                    <Label VerticalOptions="Start" FontAttributes="Bold">Selbstwirksamkeit</Label>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Vor" x:Name="efficacyBefore"/>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Während" x:Name="efficacyWhile"/>
+                    <menu:LabeledLabel VerticalOptions="Start" Title="Nach" x:Name="efficacyAfter"/>
+                </StackLayout>
+
+                <!-- Overall -->
+                <menu:LabeledLabel HorizontalOptions="Start" Grid.Row="5" InfoButtonClicked="DescriptionPopupTapRecognizer" HasInfo="True"
+                                   Title="Beurteilung der musikalischen Qualität (Mittelwert aller Einzelkriterien)" TitleAttributes="Bold"
+                                   x:Name="overallResult" />
+
+                <BoxView Grid.Row="6" HeightRequest="3" Color="#764a6b" HorizontalOptions="Fill"></BoxView>
+
+                <!-- Misc-->
+                <StackLayout Grid.Row="7">
+                    <menu:LabeledLabel VerticalOptions="Start" x:Name="performerCount" Title="Anzahl Musizierende" />
+                    <menu:LabeledLabel VerticalOptions="Start" x:Name="viewerCount" Title="Publikumsgröße" />
+                    <menu:LabeledLabel VerticalOptions="Start" x:Name="personalRelevance" Title="Der Auftritt war für mich..." />
+                    <menu:LabeledLabel VerticalOptions="Start" x:Name="perfomanceComplexity" Title="Verglichen mit anderen Auftritten war dieser Auftritt..." />
+                    <menu:LabeledLabel VerticalOptions="Start" x:Name="performanceRequirements" Title="Für mich persönlich waren die Anforderungen..." />
+                    <menu:LabeledLabel VerticalOptions="Start" x:Name="keyWords" Title="Stichwörter" />
+                </StackLayout>
+
+                <BoxView Grid.Row="8" HeightRequest="3" Color="#764a6b" HorizontalOptions="Fill"></BoxView>
+
+                <Button Grid.Row="9" HeightRequest="40" Clicked="InfoButton_Clicked" 
+                        TextColor="#764a6b" BackgroundColor="#ebe0e6" HorizontalOptions="Fill" Text="Zurück zur Grafik"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

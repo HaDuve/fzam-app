@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:controls="clr-namespace:FZAM.Pages.Controls;assembly=FZAM"
+             iOsSpecific:Page.UseSafeArea="true"
+             x:Class="FZAM.Pages.ResultPages.ResultsPageDateRange"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <ScrollView Margin="5">
+            <Grid x:Name="LayoutWrapper">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Header -->
+                <Grid Grid.Column="0" Grid.Row="0" Margin="0" RowSpacing ="0" HeightRequest="45">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Grid.Row="0" Grid.Column="0" Source="arrow_left.png" VerticalOptions="Start" Clicked="BackButton_OnClicked"
+                                 HorizontalOptions="Center" HeightRequest="40" BackgroundColor="Transparent"
+                                 IsVisible="{OnPlatform iOS=true, Android=false, UWP=true}" />
+
+                    <StackLayout Grid.Row="0" Grid.Column="1" Spacing="1">
+                        <Label VerticalOptions="Start" x:Name="PageTitel" FontAttributes="Bold" TextColor="#764a6b" FontSize="Subtitle" MaxLines="1">TITELE</Label>
+                        <Label VerticalOptions="Start" x:Name="PageDate">DATE</Label>
+                    </StackLayout>
+
+                    <ImageButton Grid.Row=" 0" Grid.Column="2" Clicked="OnShowInfoPopupButton" HeightRequest="30" 
+                                 Margin="0,0,10,0"
+                                 HorizontalOptions="End" VerticalOptions="Center" Source="button_info.png" 
+                                 BackgroundColor="Transparent"/>
+                </Grid>
+                <!-- Body -->
+
+                <BoxView Grid.Row="1" HeightRequest="3" Color="#764a6b" HorizontalOptions="Fill"></BoxView>
+
+
+                <StackLayout Grid.Row="2" Grid.Column="0">
+                    <Label VerticalOptions="Start" x:Name="AverageOverText">TEXT</Label>
+                    <controls:ThreeValueChart x:Name="DataPanel" HeightRequest="300" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Margin="20,0,0,0" VerticalOptions="Start">
+                    <Label  VerticalOptions="Start" Text="▪ Positives Coping" TextColor="#207de5" TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnShowFunctionalesCopingLabel"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label  VerticalOptions="Start" Text="▪ Dysfunktionales Lampenfieber" TextColor="#e11d21" TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnShowDysfunktionalesLampenfieber"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label  VerticalOptions="Start" Text="▪ Selbstwirksamkeit" TextColor="#692858" TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnShowSelbstwirksamkeit"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+                <BoxView Grid.Row="4" HeightRequest="3" Color="#764a6b" HorizontalOptions="Fill"></BoxView>
+                <StackLayout Grid.Row="5" Margin="0,0,0,0" VerticalOptions="Start" x:Name="barChartContainer">
+                    <Label VerticalOptions="Start" FontAttributes="Bold" TextColor="#764a6b" FontSize="Subtitle" MaxLines="1">
+                        Einzeldarstellung der Auftritte
+                    </Label>
+                </StackLayout>
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

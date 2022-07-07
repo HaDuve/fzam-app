@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ApplicationIcon />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Config\de\config.0.5.json" />
+    <None Remove="Config\de\config.0.6.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Config\de\config.0.5.json" />
+    <EmbeddedResource Include="Config\de\config.0.6.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveXAML" Version="2.1.73" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="SkiaSharp" Version="2.80.2" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="lang\l10n.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>l10n.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Controls\ThreeValueChart.xaml.cs">
+      <DependentUpon>ThreeValueChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Controls\RangeQuestionControl.xaml.cs">
+      <DependentUpon>RangeQuestionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Controls\TextAreaQuestionControl.xaml.cs">
+      <DependentUpon>TextAreaQuestionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Controls\TextQuestionControl.xaml.cs">
+      <DependentUpon>TextQuestionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Controls\DescriptionButton.xaml.cs">
+      <DependentUpon>DescriptionButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Controls\LabeledLabel.xaml.cs">
+      <DependentUpon>LabeledLabel.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\LightTheme.xaml.cs">
+      <DependentUpon>LightTheme.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\ResultPages\ResultsPageSingleInfo.xaml.cs">
+      <DependentUpon>ResultsPageSingleInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="lang\l10n.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>l10n.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\LabeledLabel.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FZAM.Pages.InfoPage"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOsSpecific:Page.UseSafeArea="true"
+             xmlns:local="clr-namespace:FZAM.Utils">
+    <ContentPage.Content>
+        <ScrollView>            
+            <StackLayout
+                x:Name="PageContentWrapper"
+                Padding="10, 30, 10, 30"
+                VerticalOptions="Start"
+                IsClippedToBounds="False">
+                <Label x:Name="PageLabel"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       TextColor="#764a6b" 
+                       />
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString >
+                            <Span x:Name="HyperlinkLeadingSpan"
+                                Text="Stage:Cool  – die Auftritts - App für MusikerInnen - wurde am "
+                                TextColor="#764a6b"/>
+                            <local:HyperlinkSpan
+                                x:Name="HyperlinkSpanFIM"
+                                Text="Freiburger Institut für Musikermedizin (FIM)"
+                                Url="https://fim.mh-freiburg.de/" />
+                            <Span x:Name="HyperlinkMiddleSpan" Text=" einer gemeinsamen Einrichtung der Hochschule für Musik Freiburg, der Albert-Ludwigs-Universität Freiburg (Medizinische Fakultät) und des Universitätsklinikums Freiburg, entwickelt.
+                                        Weitere Informationen zur Verwendung der App und der Interpretation der Ergebnisse " 
+                                  TextColor="#764a6b"/>
+                            <local:HyperlinkSpan
+                                x:Name="HyperlinkSpanDataProtection"
+                                Text="finden Sie auch auf der Webseite."
+                                Url="https://fim.mh-freiburg.de/stagecool-app/" />
+                            <Span x:Name="HyperlinkClosingSpan"
+                                  Text="Wir wünschen viel Erfolg und viel Spaß mit Stage:Cool!&#x0a;&#x0a;Freiburger Institut für Musikermedizin"
+                                  TextColor="#764a6b"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Image
+                    Source="logo.png"
+                    VerticalOptions="Start"
+                    x:Name="LogoImage"
+                    />
+            </StackLayout>            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

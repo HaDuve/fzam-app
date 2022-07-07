@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FZAM.Pages.MainPage"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOsSpecific:Page.UseSafeArea="true"
+             NavigationPage.HasNavigationBar="false">
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="70"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ImageButton Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Source="button_info.png" VerticalOptions="Center"
+                         HorizontalOptions="End" Clicked="OnShowInfoButton" HeightRequest="30" 
+                         Margin="0,0,10,0"/>
+
+            <AbsoluteLayout Grid.Row="2" Grid.Column="1"  Grid.RowSpan="2"  Grid.ColumnSpan="2" 
+                         VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Image VerticalOptions="End" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="1,.9,.6,.6" Margin="10"
+                       Source="typ_mit_geige.png" AbsoluteLayout.LayoutFlags="All"/>
+            </AbsoluteLayout>
+           
+
+            <StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start" 
+                         WidthRequest="300">
+                <ImageButton
+                    Source="fragebogen_button.PNG"
+                        Aspect="AspectFit"
+                        Clicked="OnStartQuestionnaireButton"/>
+                <Button
+                    Text="Fragebogen zurücksetzen"
+                    x:Name="ResetButton"
+                        BorderWidth="0"
+                        Clicked="OnResetQuestionnaireButton"
+                        TextColor="#6a1410"
+                        FontSize="Small"
+                        FontAttributes="Bold"
+                        IsVisible="False"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"
+                        HeightRequest="40">
+                </Button>
+                    <ImageButton
+                        Source="ergebnisse_button.PNG"
+                        Aspect="AspectFit"
+                        Clicked="OnShowResultSelectionButton"/>
+            </StackLayout>
+
+            <Image Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="0" 
+                   Source="titel_unten_withoutborder.png" VerticalOptions="End" HorizontalOptions="Center"/>
+
+            <BoxView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Margin="0"
+                     Color="#764a6b"
+                     HorizontalOptions="Fill" />
+
+            <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="6"
+                   x:Name="Vorhang"
+                   Source="vorhang.png"
+                   Aspect="Fill"
+                   VerticalOptions="Start"/>
+
+        </Grid>
+</ContentPage>

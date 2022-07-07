@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="1619" useAutolayout="YES">
+    <device id="retina3_5" orientation="portrait"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1618">
+            <objects>
+                <viewController id="1619" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3275"/>
+                        <viewControllerLayoutGuide type="bottom" id="3276"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1620" userInteractionEnabled="NO" clipsSubviews="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="custom" customColorSpace="sRGB" red="0.5453776121" green="0.08484169096" blue="0.1024113372" alpha="1"/>
+                        <color key="tintColor" red="0.46274509803921599" green="0.29012259839999999" blue="0.41915607449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                        </accessibility>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" id="3680" translatesAutoresizingMaskIntoConstraints="NO" alignment="center" distribution="equalSpacing" spacing="10" userInteractionEnabled="NO" horizontalHuggingPriority="300">
+                                <rect key="frame" x="126.5" y="206.5" width="67" height="67"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3674" translatesAutoresizingMaskIntoConstraints="NO" image="icon_musiker">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="unspecified" scale="default" weight="unspecified" pointSize="17"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="3890" firstItem="3674" firstAttribute="centerY" secondItem="3680" secondAttribute="centerY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="3681" firstAttribute="centerY" secondItem="3680" secondAttribute="centerY"/>
+                            <constraint id="3682" firstAttribute="centerX" secondItem="3680" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <connections/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1621" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="-551"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_musiker" width="95" height="95"/>
+    </resources>
+</document>

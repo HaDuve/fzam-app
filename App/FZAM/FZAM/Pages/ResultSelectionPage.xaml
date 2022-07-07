@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FZAM.Pages.ResultSelectionPage"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             iOsSpecific:Page.UseSafeArea="true"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="5" Grid.ColumnSpan="2"/>
+                    <RowDefinition Height="Auto" Grid.ColumnSpan="2"/>
+                    <RowDefinition Height="Auto" Grid.ColumnSpan="2"/>
+                    <RowDefinition Height="40" Grid.ColumnSpan="2"/>
+                    <RowDefinition Height="5" Grid.ColumnSpan="2"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*" Grid.ColumnSpan="2"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+            <!-- Header -->
+            <Grid Grid.Column="0" Grid.Row="0" ColumnSpan="2" Margin="0" RowSpacing ="0" HeightRequest="45">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <ImageButton Grid.Row="0" Grid.Column="0" Source="arrow_left.png" VerticalOptions="Start" Clicked="BackButton_OnClicked"
+                             HorizontalOptions="Center" HeightRequest="40" BackgroundColor="Transparent"
+                             IsVisible="{OnPlatform iOS=true, Android=false, UWP=true}" />
+
+                <StackLayout Grid.Row="0" Grid.Column="1" Spacing="1">
+                    <Label VerticalOptions="Start" x:Name="PageTitel" FontAttributes="Bold" 
+                           TextColor="#764a6b" FontSize="Subtitle" MaxLines="1">Vergangene Auftritte</Label>
+                    <Label VerticalOptions="Start" x:Name="PageDate"></Label>
+                </StackLayout>
+
+                <ImageButton Grid.Row=" 0" Grid.Column="2" Clicked="OnShowInfoPopupButton" HeightRequest="30" 
+                             Margin="0,0,10,0"
+                             HorizontalOptions="End" VerticalOptions="Center" Source="button_info.png" 
+                             BackgroundColor="Transparent"/>
+            </Grid>
+            <!-- Body -->
+
+            <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="3" Color="#764a6b" HorizontalOptions="Fill"/>
+
+            <Label Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" HorizontalOptions="Start" 
+                   FontAttributes="Bold" TextColor="#e8816f" Text="Ergebnisse nach Datum filtern" />
+
+
+            <StackLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="FillAndExpand">
+                    <Label  HorizontalOptions="Start" Text="von" />
+                    <DatePicker x:Name="StartDatePicker" HorizontalOptions="FillAndExpand" DateSelected="DatePicker_DateSpecified">
+                        <DatePicker.Format>dd.MM.yyyy</DatePicker.Format>
+                    </DatePicker>
+                </StackLayout>
+            <StackLayout Grid.Row="3" Grid.Column="1" HorizontalOptions="FillAndExpand">
+                        <Label Text="bis" HorizontalOptions="Start"/>
+                    <DatePicker x:Name="EndDatePicker" HorizontalOptions="FillAndExpand" DateSelected="DatePicker_DateSpecified">
+                        <DatePicker.Format>dd.MM.yyyy</DatePicker.Format>
+                    </DatePicker>
+            </StackLayout>
+
+                <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="40" Clicked="SelectByDateButton_Clicked" 
+                        TextColor="#764a6b" BackgroundColor="#ebe0e6" HorizontalOptions="Fill" Text="Datumsbereich anzeigen"
+                        x:Name="showDataRange" IsEnabled="False"/>
+
+                <BoxView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="3" Color="#764a6b" HorizontalOptions="Fill"/>
+
+                <StackLayout Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
+                    <Label HorizontalOptions="Start" 
+                           FontAttributes="Bold" TextColor="#e8816f" Text="Titel/Stichworte suchen" />
+                    <SearchBar x:Name="SearchBar" HorizontalOptions="FillAndExpand" 
+                               IsSpellCheckEnabled="False" Keyboard="Text" 
+                               SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+                </StackLayout>
+
+                <ScrollView Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2">
+                <StackLayout  x:Name="ListWrapper"
+                                         Padding="0,30,0,0"
+                                         Spacing="0"
+                                         VerticalOptions="Start"
+                                         HorizontalOptions="StartAndExpand"/> 
+                </ScrollView>
+            </Grid>
+       
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,574 @@
+{
+	"questionnaires": [
+		{
+			"$type": "FZAM.Questions.Questionnaire, FZAM",
+			"TextBefore": "Wenige Minuten vor dem Auftritt …",
+			"ButtonTextBefore": "Fragebogen starten",
+			"SkipTitleScreen": true,
+			"Questions": [
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… konnte ich mich auf die bevorstehende Aufgabe konzentrieren.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… spürte ich Anzeichen von Aufregung in meinem Körper.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Id": 3,
+					"Title": "… fühlte ich mich innerlich stark für den bevorstehenden Auftritt.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… ist es mir gelungen, mich nicht von meiner Aufregung aus der Ruhe bringen zu lassen.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… habe ich mir vorgestellt, dass sich das Publikum über meine Darbietung freuen wird.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… habe ich mich durch körperliche Reaktionen meiner Aufregung beeinträchtigt gefühlt.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… hatte ich Lust aufzutreten und zu zeigen, was ich kann.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… habe ich meine Aufregung unter Kontrolle bekommen.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… dachte ich daran, was alles schief gehen könnte.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… war ich durch meine Aufregung verunsichert.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… fühlte ich mich gut vorbereitet.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				}
+			]
+		},
+		{
+			"$type": "FZAM.Questions.Questionnaire, FZAM",
+			"TextBefore": "Während des Auftritts …",
+			"ButtonTextBefore": "Fragebogen fortsetzen",
+			"SkipTitleScreen": true,
+			"Questions": [
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… habe ich ständig daran gedacht, dass etwas nicht klappen könnte.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… spürte ich Aufregung in meinem Körper.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… hatte ich Spaß und wollte zeigen, was ich kann.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… ist es mir gelungen, mich nicht von meiner Aufregung aus der Ruhe bringen zu lassen.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… konnte ich mich auf mein Spiel/ auf meine sängerische Darbietung konzentrieren.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… habe ich mich durch körperliche Reaktionen meiner Aufregung beeinträchtigt gefühlt.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… hatte ich das Gefühl, dass meine Darbietung beim Publikum ankommt.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… war ich durch meine Aufregung verunsichert.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… wusste ich genau, was ich tat.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… fühlte ich mich innerlich stark.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… habe ich meine Aufregung unter Kontrolle bekommen.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				}
+			]
+		},
+		{
+			"$type": "FZAM.Questions.Questionnaire, FZAM",
+			"TextBefore": "Jetzt, nach dem Auftritt …",
+			"ButtonTextBefore": "Fragebogen fortsetzen",
+			"SkipTitleScreen": true,
+			"Questions": [
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… denke ich, dass meine Darbietung beim Publikum gut angekommen ist.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… fällt es mir schwer zu meiner Darbietung zu stehen.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… freue ich mich schon auf meinen nächsten Auftritt.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… stehe ich zu meiner Darbietung.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… kann ich abschalten.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… fällt es mir schwer zu glauben, dass meine Darbietung dem Publikum gefallen hat.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… fühle ich mich innerlich stark für den nächsten Auftritt.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… freue ich mich über meine Leistung.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… fühle ich mich gestresst/unwohl.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… fühle ich mich darin bestätigt, dass mir Auftreten liegt",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… denke ich hauptsächlich daran, was nicht so gut geklappt hat.",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 4
+				}
+			]
+		},
+		{
+			"$type": "FZAM.Questions.Questionnaire, FZAM",
+			"TextBefore": "Meine persönliche musikalische Leistung beurteile ich …",
+			"ButtonTextBefore": "Fragebogen fortsetzen",
+			"SkipTitleScreen": true,
+			"Questions": [
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… in der dynamischen Gestaltung als",
+					"rangeStart": 1,
+					"rangeEnd": 6,
+					"rangeStep": 1,
+					"usedLabel": 5
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… in der rhythmischen Präzision als",
+					"rangeStart": 1,
+					"rangeEnd": 6,
+					"rangeStep": 1,
+					"usedLabel": 5
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… in der klanglichen Gestaltung als",
+					"rangeStart": 1,
+					"rangeEnd": 6,
+					"rangeStep": 1,
+					"usedLabel": 5
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… im musikalischen Ausdruck als",
+					"rangeStart": 1,
+					"rangeEnd": 6,
+					"rangeStep": 1,
+					"usedLabel": 5
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… in der Phrasierung als",
+					"rangeStart": 1,
+					"rangeEnd": 6,
+					"rangeStep": 1,
+					"usedLabel": 5
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… in der Intonation als",
+					"rangeStart": 1,
+					"rangeEnd": 6,
+					"rangeStep": 1,
+					"usedLabel": 5
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "… insgesamt als",
+					"rangeStart": 1,
+					"rangeEnd": 6,
+					"rangeStep": 1,
+					"usedLabel": 5
+				}
+			]
+		},
+		{
+			"$type": "FZAM.Questions.Questionnaire, FZAM",
+			"TextBefore": "Fragen zum Auftritt",
+			"ButtonTextBefore": "Fragebogen fortsetzen",
+			"SkipTitleScreen": true,
+			"Questions": [
+				{
+					"$type": "FZAM.Questions.TextQuestion, FZAM",
+					"Title": "Wie viele Personen spielten im Ensemble/Orchester?",
+					"inputType": 1
+				},
+				{
+					"$type": "FZAM.Questions.TextQuestion, FZAM",
+					"Title": "Wie viele Personen waren im Publikum?",
+					"inputType": 1
+				},
+				{
+					"$type": "FZAM.Questions.TextareaQuestion, FZAM",
+					"Title": "Kurze Beschreibung des Auftritts"
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "Wie wichtig war der Auftritt für dich persönlich?",
+					"rangeStart": 1,
+					"rangeEnd": 4,
+					"rangeStep": 1,
+					"usedLabel": 3,
+					"reverseLabel": true
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "Verglichen mit anderen Auftritten war dieser Auftritt...",
+					"rangeStart": 1,
+					"rangeEnd": 4,
+					"rangeStep": 1,
+					"usedLabel": 2
+				},
+				{
+					"$type": "FZAM.Questions.RangeQuestion, FZAM",
+					"Title": "Für mich persönlich waren die Anforderungen...",
+					"rangeStart": 1,
+					"rangeEnd": 5,
+					"rangeStep": 1,
+					"usedLabel": 1
+				}
+			]
+		}
+	],
+	"ResultAreas": [
+		{
+			"$type": "FZAM.Results.EvaluationArea, FZAM",
+			"Title": "Positives Coping",
+			"Type": "chart",
+			"ChartColorString": "#207de5",
+			"PopupType": 1,
+			"Results": [
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Vor ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q0_0", "q0_3", "q0_7"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Während ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q1_3", "q1_4", "q1_10"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Nach ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q2_0", "q2_3", "q2_7"]
+					}
+				}
+			]
+		},
+		{
+			"$type": "FZAM.Results.EvaluationArea, FZAM",
+			"Title": "Dysfunktionales Lampenfieber",
+			"Type": "chart",
+			"ChartColorString": "#e11d21",
+			"PopupType": 2,
+			"Results": [
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Vor ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": [ "q0_1", "q0_5", "q0_6", "q0_9" ]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Während ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q1_0", "q1_1", "q1_6", "q1_7"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Nach ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q2_1", "q2_5", "q2_8", "q2_10"]
+					}
+				}
+			]
+		},
+		{
+			"$type": "FZAM.Results.EvaluationArea, FZAM",
+			"Title": "Selbstwirksamkeit",
+			"Type": "chart",
+			"ChartColorString": "#692858",
+			"PopupType": 3,
+			"Results": [
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Vor ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q0_4", "q0_8", "q0_10", "q0_2"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Während ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q1_2", "q1_6", "q1_8", "q1_9"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Nach ",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q2_2", "q2_6", "q2_9"]
+					}
+				}
+			]
+		},
+		{
+			"Title": "Urteilsskala",
+			"Type": "text",
+			"PopupType": 4,
+			"Results": [
+				{
+					"Title": "",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingAverageExpression, FZAM",
+						"operands": ["q3_0", "q3_1", "q3_2", "q3_3", "q3_4", "q3_5", "q3_6"]
+					}
+				}
+			]
+		},
+		{
+			"$type": "FZAM.Results.EvaluationArea, FZAM",
+			"Title": "Informationen zum Auftritt",
+			"Type": "text",
+			"Results": [
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Wie viele Personen spielten im Ensemble/Orchester?",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingSingleValueExpression, FZAM",
+						"operands": ["q4_0"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Wie viele Personen waren im Publikum?",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingSingleValueExpression, FZAM",
+						"operands": ["q4_1"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Kurze Beschreibung des Auftritts",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingSingleValueExpression, FZAM",
+						"operands": ["q4_2"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Wie wichtig war der Auftritt für dich persönlich?",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingSingleValueExpression, FZAM",
+						"operands": ["q4_3"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Verglichen mit anderen Auftritten war dieser Auftritt...",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingSingleValueExpression, FZAM",
+						"operands": ["q4_4"]
+					}
+				},
+				{
+					"$type": "FZAM.Results.Evaluation, FZAM",
+					"Title": "Für mich persönlich waren die Anforderungen...",
+					"expression": {
+						"$type": "FZAM.Results.EvaluatingSingleValueExpression, FZAM",
+						"operands": ["q4_5"]
+					}
+				}
+			]
+		}
+	]
+}
