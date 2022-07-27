@@ -17,8 +17,6 @@ FZAM (Fragebogen zum Auftritt für MusikerInnen) (1) in .net and Xamarin (2) and
 (3) https://devblogs.microsoft.com/xamarin/microcharts-elegant-cross-platform-charts-for-any-app/</br>
  
  
- Developed by a small team of 3 programmers (including me).
- 
  ## Apple Store Screenshots
  ![image](https://user-images.githubusercontent.com/48185176/181192915-9d7a02ef-180f-40f7-b9fd-306dc35d4ec3.png)
 ![image](https://user-images.githubusercontent.com/48185176/181192996-d6376324-9802-4786-8e80-3690e92108a4.png)
